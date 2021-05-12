@@ -28,7 +28,7 @@ RightFrame.pack(side=RIGHT,pady=(10,50))
 
 import mysql.connector as m
 
-con=m.connect(host="127.0.0.1",user="root",password="H@rd2Cr@ck",database="rms")
+con=m.connect(host="127.0.0.1",user="root",password="password",database="rms")
 c=con.cursor()
 c.execute("create table if not exists selling_data(ref_no int,Large_fries int,Burger_Meal int,F_O_Meal int,Chicken_meal int,Cheese_meal int,Drinks int,Cost_of_Meal int,Service_charge float,State_tax float,Sub_total float,Total float)")
 
